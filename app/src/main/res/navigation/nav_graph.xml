@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersDetailFragment">
+
+    <fragment
+        android:id="@+id/usersDetailFragment"
+        android:name="com.example.vpdmoneytask.ui.UsersDetailFragment"
+        android:label="fragment_users_detail"
+        tools:layout="@layout/fragment_users_detail" >
+        <action
+            android:id="@+id/action_usersDetailFragment_to_singleUserDetailsFragment"
+            app:destination="@id/singleUserDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/likesFragment"
+        android:name="com.example.vpdmoneytask.ui.LikesFragment"
+        android:label="fragment_likes"
+        tools:layout="@layout/fragment_likes" />
+    <fragment
+        android:id="@+id/singleUserDetailsFragment"
+        android:name="com.example.vpdmoneytask.ui.SingleUserDetailsFragment"
+        android:label="fragment_single_user_details"
+        tools:layout="@layout/fragment_single_user_details" />
+
+</navigation>

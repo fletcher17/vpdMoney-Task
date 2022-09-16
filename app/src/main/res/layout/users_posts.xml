@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp">
+
+
+    <EditText
+        android:id="@+id/dialognameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dialogusernameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="UserName"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/dialognameTextView"
+        app:layout_constraintStart_toStartOf="@+id/dialognameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/dialognameTextView" />
+
+    <EditText
+        android:id="@+id/dialogemailTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/dialogusernameTv"
+        app:layout_constraintStart_toStartOf="@+id/dialogusernameTv"
+        app:layout_constraintTop_toBottomOf="@+id/dialogusernameTv" />
+
+    <EditText
+        android:id="@+id/dialogaddressTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/dialogemailTv"
+        app:layout_constraintStart_toStartOf="@+id/dialogemailTv"
+        app:layout_constraintTop_toBottomOf="@+id/dialogemailTv" />
+
+    <TextView
+        android:id="@+id/add_post_textView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="10dp"
+        android:text="Add"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogaddressTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
