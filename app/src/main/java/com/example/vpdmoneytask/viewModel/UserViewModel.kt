@@ -25,6 +25,7 @@ class UserViewModel(
     private val _singleUserItem: MutableLiveData<UserDetailsResponseItem> = MutableLiveData()
     val singleUserItem: LiveData<UserDetailsResponseItem> get() = _singleUserItem
 
+
     init {
         getUserDetails()
     }
